@@ -16,45 +16,98 @@
         */
 
         /*TIPO 1*/
-
         h1 {
-            background-color: black; color: red;
-        }
-
-        li{
-            color: blue;
+            background-color: black;
+            color: red;
         }
 
         /*TIPO 2*/
+        #texto-boas-vindas {
+            background-color: bisque;
+            color: blueviolet;
+        }
+
+        #explicacao-seletor {
+            color: rgb(255, 0, 234);
+        }
 
         /*TIPO 3*/
+        .a {
+            color: red;
+        }
+
+        .b {
+            color: greenyellow;
+        }
+
+        .textoMaiusculo {
+            text-transform: uppercase;
+        }
 
         /*TIPO 4*/
+        * {
+            font-weight: bold;
+        }
 
         /*TIPO 5*/
+        [title] {
+            color: rgb(0, 255, 38);
+        }
 
+        [title~="streaming"] {
+            background: rgba(255, 0, 0, 0.138);
+        }
 
+        [href^="http"] {
+            /* PREFIXO */
+            background: rgba(255, 0, 0, 0.138);
+        }
+
+        [href$="user"] {
+            /* SUFIXO */
+            background: rgb(128, 0, 255);
+        }
     </style>
 
 </head>
 
 <body>
-    <!-- TIPO 1 \\-->
+    <!--  \\-->
     <h1>
         Seletrores CSS
     </h1>
 
-    <p>Bem-vindo!</p>
-    <p>No CSS possuimos os leteroes por ID</p>
+    <p id="texto-boas-vindas">Bem-vindo!</p>
+    <p id="explicacao-seletor">No CSS possuimos os leteroes por ID</p>
     <div>
         <ul>
-            <li> <b>Seletor por Tipo:</b> Busca elementos por uma tag HTML ESPECIFICA</li>
-            <li> <b>Seletor por ID(#):</b> Busca elementos atraves do atributo 'id'</li>
-            <li> <b>Seletor por Classe(.):</b> Busca elementos atraves do atributo 'class'</li>
-            <li> <b>Seletor Universal(*):</b> Seleciona todos os elemtneos HTML</li>
-            <li> <b>Seletor por Atributo([atrib]):</b> Seleciona elementos que possuem um atributo especifico em nosso
+            <li class="a "> <b>Seletor por Tipo:</b> Busca elementos por uma tag HTML ESPECIFICA</li>
+            <li class="b textoMaiusculo"> <b>Seletor por ID(#):</b> Busca elementos atraves do atributo 'id'</li>
+            <li class="a"> <b>Seletor por Classe(.):</b> Busca elementos atraves do atributo 'class'</li>
+            <li class="b textoMaiusculo"> <b>Seletor Universal(*):</b> Seleciona todos os elemtneos HTML</li>
+            <li class="a "> <b>Seletor por Atributo([atrib]):</b> Seleciona elementos que possuem um atributo especifico
+                em nosso
                 documento HTML e conseguimos tambem buscar atributos com um valor especifico </li>
         </ul>
     </div>
+
+    <div>
+        <ul>
+            <li>
+                <a title="streaming Netflix" href="https://www.netflix.com/br/" target="_blank"> Netflix</a>
+            </li>
+            <li>
+                <a title="MercadoLivre" href="https://www.mercadolivre.com.br/" target="_blank"> Mercado Livre</a>
+            </li>
+            <li>
+                <a title="streaming Amazon" href="https://www.amazon.com.br/user" target="_blank">Link Amazon</a>
+            </li>
+            <li>
+                Teste
+            </li>
+        </ul>
+
+    </div>
 </body>
+
 </html>
