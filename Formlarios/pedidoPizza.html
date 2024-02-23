@@ -5,31 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido da pizza</title>
+    <style>
+        fieldset {
+            border-radius: 15px;
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <form  method="get">
+
+    <img src="https://th.bing.com/th/id/R.bb8e374bedc0d7212ed80d31798d9c14?rik=SNbJfikxdfHkcg&riu=http%3a%2f%2f66.media.tumblr.com%2f598933cbd243859c572b4b6431cae3ad%2ftumblr_nzi4h9Aw4N1u9ooogo1_540.gif&ehk=LOn%2b6cHg4%2fho%2fiaHtq3enlGtFo3oaT2h5R3KcOxn9yU%3d&risl=&pid=ImgRaw&r=0"
+        alt="GIF" width="400">
+    </img>
+
+
+    <form method="get">
         <h1>Pedido de Pizza: Moda da casa</h1>
-        <h2>Quais opcionais você deseja?</h2>
-        <label><input type="checkbox" disabled name="maisOpcao[]"> + queijo </label><br>
-        <label><input type="checkbox" name="maisOpcao[]"> + calabresa </label><br>
-        <label><input type="checkbox" name="maisOpcao[]"> + frango </label><br>
-        <label><input type="checkbox" name="maisOpcao[]"> + milho </label><br>
+        <fieldset>
+            <legend>
+                <font size="5"> Quais opcionais você deseja?</font>
+            </legend>
+            <label><input type="checkbox" disabled name="maisOpcao[]"> + queijo </label><br>
+            <label><input type="checkbox" name="maisOpcao[]"> + calabresa </label><br>
+            <label><input type="checkbox" name="maisOpcao[]"> + frango </label><br>
+            <label><input type="checkbox" name="maisOpcao[]"> + milho </label><br>
+        </fieldset>
 
-        <h2>Borda recheada?</h2>
-        <label><input type="radio" name="Borda" value="sim"> Sim </label><br>
-        <label><input type="radio" name="Borda" value="nao"> Não </label><br>
+        <fieldset>
+            <legend>
+                <font size="5"> Borda recheada?</font>
+            </legend>
+            <label><input type="radio" name="Borda" value="sim"> Sim </label><br>
+            <label><input type="radio" name="Borda" value="nao"> Não </label><br>
+        </fieldset>
 
-        <h2>Bebida</h2>
-        <label><input type="radio" name="bebida" value="Suco"> Suco </label><br>
-        <label><input type="radio" name="bebida" value="Refrigerante"> Refrigerante </label><br>
-        <label><input type="radio" name="bebida" value="Agua"> Agua </label><br>
-        <label><input type="radio" name="bebida" value="Nenhum"> Nenhum </label><br>
+        <fieldset>
+            <legend>
+                <font size="5"> Bebida:</font>
+            </legend>
+            <label><input type="radio" name="bebida" value="Suco"> Suco </label><br>
+            <label><input type="radio" name="bebida" value="Refrigerante"> Refrigerante </label><br>
+            <label><input type="radio" name="bebida" value="Agua"> Agua </label><br>
+            <label><input type="radio" name="bebida" value="Nenhum"> Nenhum </label><br>
+        </fieldset>
 
         <input type="submit" value="enviar">
         <br><a href="index.html">Voltar para o inicio</a>
 
     </form>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127169.97287575775!2d-42.823480272352754!3d-5.093734359805065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e32519a8599c7%3A0xd4483d47c29fd9c6!2sTeresina%2C%20PI!5e0!3m2!1spt-BR!2sbr!4v1708693338217!5m2!1spt-BR!2sbr"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- ter cuidado // -->
 
 </body>
 
