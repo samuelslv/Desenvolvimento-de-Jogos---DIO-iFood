@@ -5,6 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha do CSS</title>
+    <style>
+
+        img{
+            margin-bottom: 20px ;
+        }
+
+        #pre-definida {
+            color: orange;
+            border: 2px solid currentColor;
+            width: 300px;
+        }
+
+        .rgb {
+            #R {
+                color: rgb(255, 0, 0);
+            }
+
+            #G {
+                color: rgb(0, 255, 0);
+            }
+
+            #B {
+                color: rgb(0, 0, 255);
+            }
+
+        }
+
+        #rgba {
+            background: rgba(255, 0, 180, 0.1);
+            color: rgba(0, 0, 255, 1);
+            width: 300px;
+
+        }
+
+        #hex {
+            /* vai do 0 ate 9 e de A ate F */
+            color: #00A900;
+            border: #99a233 solid 2px;
+            width: 300px;
+        }
+
+        #hexT {
+            /* vai do 0 ate 9 e de A ate F, os dois ultimos é a transparencia*/
+            color: #00A90080;
+            border: #99a233 solid 2px;
+            width: 300px;
+        }
+
+        #hsl {
+            /* 0 ou 350 RED, 120 GREEN, 240 BLUE -- Saturation 0(cinza) e 
+            100(cor total) -- lightness 0(cinza) e 100(cor total) */
+            color: hsl(300, 100%, 50%);
+            border: hsl(215, 100%, 30%) solid 2px;
+            width: 300px;
+
+        }
+
+        #hsla {
+            /* 0 ou 350 RED, 120 GREEN, 240 BLUE -- Saturation 0(cinza) e 
+            100(cor total) -- lightness 0(cinza) e 100(cor total) -- 0 a 1 é transparencia */
+            color: hsla(180, 20%, 25%, 1);
+            background: hsla(290, 47%, 60%, 0.9);
+            width: 300px;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -13,13 +79,29 @@
     <div>
         <ul>
             <li id="pre-definida">Cores pré-definidas</li>
+            <img src="./assets/predefinido.png" width="280" alt="">
+
             <li id="current-color">Palavra-chave "currentcolor</li>
-            <li id="hex">hexadeciaml</li>
+            <img src="./assets/currentcolor.png" width="280" alt="">
+
+            <li id="hex">Hexadeciaml</li>
+            <img src="./assets/hex.png" width="280" alt="">
+
             <li id="hexT">Hexadeciaml com transparencia</li>
-            <li id="rgb">RGB</li>
+            <img src="./assets/hexT.png" width="460" alt="">
+
+            <li class="rgb"><span id="R">R</span><span id="G">G</span><span id="B">B</span></li>
+            <img src="./assets/RGB.png" width="280" alt="">
+
             <li id="rgba">RGBA</li>
+            <img src="./assets/RGBa.png" width="280" alt="">
+
             <li id="hsl">HSL</li>
+            <img src="./assets/hsl.png" width="460" alt="">
+
             <li id="hsla">HSLA</li>
+            <img src="./assets/hsla.png" width="460" alt="">
+
         </ul>
     </div>
 
