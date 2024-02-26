@@ -1,0 +1,20 @@
+.exemplo2{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-style: solid;
+    margin-left: 150px;
+}
+
+#ex1{
+    border-image-source: url(./teresina.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 100;
+}
+
+#ex2{
+    border-image-source: linear-gradient(red, orange);
+    border-image-slice: 10;
+    border-image-outset: 18px;
+}
