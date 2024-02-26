@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+h1{
+    font-family: Kode Mono;
+}
+
+
+h2 {
+    font-family: Minecraft;
+}
+
+/*adicionar fonte externa*/
+@font-face {
+    font-family: Minecraft;
+    src: url(./fonts/Minecrafter.Reg.ttf);
+    font-weight: bold;
+}
+
+li{
+    font-size: 25px;
+    font-style: italic;
+}
