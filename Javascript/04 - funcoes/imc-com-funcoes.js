@@ -24,4 +24,4 @@ function classificarImc(imc) {
     
     const imc = calcularImc(peso, altura);
     console.log(classificarImc(imc));
-})();
+})(); // Função imediatamente invocada, para usar no lugar do main
