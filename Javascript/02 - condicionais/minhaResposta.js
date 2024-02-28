@@ -16,7 +16,3 @@ if (tipoComb === 'Gasolina') {
 } else {
     console.log('É água')
 }
-
-
-
-
